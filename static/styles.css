@@ -13,7 +13,7 @@
    General Body Styling
 ================================ */
 body.home {
-  background-image: url("/assests/homepage.jpg");
+  background-image: url("./../assests/homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,7 +22,7 @@ body.home {
 }
 
 body.about {
-  background-image: url("/assests/aboutus.jpg");
+  background-image: url("./../assests/aboutus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +31,7 @@ body.about {
 }
 
 body.membership {
-  background-image: url("/assests/membership.jpg");
+  background-image: url("./../assests/membership.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
