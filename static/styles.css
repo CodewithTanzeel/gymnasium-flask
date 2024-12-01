@@ -1,0 +1,341 @@
+/* ================================
+   Color Palette
+================================ */
+:root {
+  --primary-blue: #2f6a87; /* Deep Blue */
+  --light-blue: #6eb2cc; /* Light Blue */
+  --light-gray: #e7e7e7; /* Light Gray */
+  --primary-orange: #ea6c36; /* Warm Orange */
+  --earthy-brown: #9a5131; /* Rich Brown */
+}
+
+/* ================================
+   General Body Styling
+================================ */
+body.home {
+  background-image: url("/assests/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body.about {
+  background-image: url("/assests/aboutus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body.membership {
+  background-image: url("/assests/membership.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--light-gray); /* Light gray for background */
+  font-family: Arial, sans-serif;
+}
+
+/* ================================
+   Paragraph Styling
+================================ */
+.paragraph {
+  color: #ffff00;
+
+  padding: 20px;
+}
+
+/* ================================
+   Heading Styling
+================================ */
+h1 {
+  color: var(--light-blue);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+/* ================================
+   Navbar Styling
+================================ */
+.navbar {
+  padding: 20px 30px;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-orange); /* Hover effect with primary orange */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-orange);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+  color: #6eb2cc;
+  transition: color 0.3s ease;
+}
+
+/* ================================
+   Carousel Image Styling
+================================ */
+.carousel-inner img {
+  max-width: 60%;
+  height: 30vh;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* ================================
+   Card Layout
+================================ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of cards */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 50px; /* Fixed height for square cards */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+}
+
+.card:hover {
+  transform: scale(1.15); /* Slightly enlarge the card on hover */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 50%; /* Image will take the full height of the card */
+  object-fit: cover; /* Ensure the image covers the card without distortion */
+}
+
+.card-body {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================================
+   Membership Section
+================================ */
+.membership-plans {
+  padding: 60px 10px;
+  background-color: transparent;
+}
+
+.membership-plans h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--primary-blue); /* Use primary blue for the heading */
+}
+
+.membership-plans .row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* ================================
+   Membership Features Section
+================================ */
+.membership-features {
+  padding: 60px 0;
+  background-color: transparent;
+}
+
+.membership-features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary-blue); /* Heading in primary blue */
+}
+
+.membership-features .col-md-4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.membership-features h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-blue); /* Use primary blue for feature headings */
+}
+
+.membership-features p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* ================================
+   Contact Form Section
+================================ */
+.contact-form {
+  padding: 60px 0;
+  background-color: transparent;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(231, 116, 8, 0.1);
+  padding: 30px;
+}
+
+.contact-form .form-label {
+  font-size: 1.1rem;
+  color: var(--primary-blue); /* Use primary blue for form labels */
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.contact-form .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-orange); /* CTA button in primary orange */
+  border-color: var(--primary-orange);
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #6eb2cc;
+}
+
+/* ================================
+   Footer Section
+================================ */
+.footer {
+  background-color: transparent;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #2f6a87;
+}
+
+/* ================================
+   Call to Action Section
+================================ */
+.cta {
+  background-color: transparent;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: var(--primary-orange); /* CTA button with primary orange */
+  border-color: var(--primary-orange);
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #6eb2cc;
+}
+
+/* ================================
+   Animation Classes
+================================ */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+
+.fade-in-image {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
